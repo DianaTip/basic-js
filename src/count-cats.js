@@ -18,11 +18,8 @@ function countCats(matrix) {
 var result = 0;
 even = (element) => element === '^^'; 
 for (let i=0; i<matrix.length; i++)
-
-   /* result+= matrix[i].some(even => even === '^^');*/
    result+= matrix[i].some(even);
 return matrix.join(',').split(',').filter(item => item === '^^').length;
-
 }
 
 module.exports = {
